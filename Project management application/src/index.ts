@@ -15,8 +15,6 @@ import * as serverService from './services/server.service';
   }
 })();
 
-
-
 process.on('SIGINT', async () => {
   await mongoose.disconnect();
   process.exit();
